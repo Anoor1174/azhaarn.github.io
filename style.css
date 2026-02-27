@@ -105,10 +105,34 @@ h2 {
     font-weight: 600;
 }
 
-
-.achievement-list li {
-    margin-bottom: 12px;
+.achievement-card {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid #e3e8f0;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.achievement-card h3 {
+    margin-top: 0;
+    color: #0A2A43;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    margin: 0;
+    color: #444;
+    line-height: 1.6;
+}
+
 
 .timeline-item {
     background: white;
