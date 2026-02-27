@@ -1,61 +1,98 @@
+/* Global */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    font-family: "Inter", Arial, sans-serif;
+    background: #fafafa;
     color: #333;
+    line-height: 1.6;
 }
 
-header {
+/* Hero Section */
+.hero {
     text-align: center;
-    padding: 60px 20px;
-    background: #0a74da;
-    color: white;
+    padding: 120px 20px 80px;
+    background: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background: #fff;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    margin-top: 25px;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #0a74da;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-section {
+/* Sections */
+.section {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 80px auto;
     padding: 0 20px;
 }
 
 h2 {
+    font-size: 2rem;
     color: #0a74da;
+    margin-bottom: 20px;
 }
 
+/* Project Cards */
 .project-card {
     background: white;
-    padding: 20px;
+    padding: 25px;
     margin: 20px 0;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
 
 .project-card a {
     display: inline-block;
     margin-top: 10px;
     color: #0a74da;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #eee;
-    margin-top: 40px;
+    padding: 30px;
+    background: #f0f0f0;
+    margin-top: 60px;
+}
+
+/* Fade-in Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
