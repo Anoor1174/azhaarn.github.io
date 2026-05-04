@@ -1,160 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azhaar Noor | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azhaar Noor | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content fade-in">
-            <h1>Azhaar Noor</h1>
-            <p>Computer Science • Software Engineering • Machine Learning</p>
-        </div>
+<header class="site-header">
+  <a href="#" class="logo">AN <span>Azhaar Noor</span></a>
 
-        <nav class="fade-in delay-1">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <section id="about" class="section fade-in">
-        <h2>About Me</h2>
-        <p>
-            I’m a Computer Science student with a strong interest in 
-            machine learning and building practical solutions. My work spans 
-            Java APIs, full‑stack development and more. Supported by leadership 
-            roles and project experience.
-        </p>
-    </section>
+<section class="hero">
+  <p class="eyebrow">Computer Science Portfolio</p>
 
-    <section id="skills" class="section fade-in">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div><strong>Languages:</strong> Java, Python, JavaScript</div>
-            <div><strong>Tools:</strong> Git, JAX‑RS, Flask, SQL, Kali Linux, Owasp</div>
-            <div><strong>Areas:</strong> APIs, ML, Cyber Security, OOP, IoT</div>
-        </div>
-    </section>
+  <h1>Software engineering, machine learning, cyber security, and practical systems.</h1>
 
-    <section id="projects" class="section fade-in">
-    <h2>Projects</h2>
+  <p class="hero-text">
+    I’m a final-year Computer Science student building practical solutions across Java APIs,
+    machine learning web apps, AI search algorithms, and cyber security projects.
+  </p>
 
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <h3>Diabetes Risk Estimator (Final Year Project – In Progress)</h3>
-            <p>
-                A machine learning web application designed to predict diabetes risk using clinical features. 
-                Currently developing the model, evaluation pipeline, and full-stack deployment as part of my final year project.
-            </p>
-            <a href="https://github.com/Anoor1174/diabetes-predictor" target="_blank">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Mancala AI</h3>
-            <p>
-                An AI-powered Mancala game implementing strategic decision-making using algorithms such as Minimax 
-                and heuristic evaluation. Built to explore game theory, search optimisation, and AI behaviour modelling.
-            </p>
-            <a href="https://github.com/Anoor1174/Mancala-AI" target="_blank">View Project</a>
-        </div>
-
-    </div>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="#contact" class="btn secondary">Get in Touch</a>
+  </div>
 </section>
 
+<main>
 
-    <section id="achievements" class="section fade-in">
-    <h2>Achievements</h2>
+<section id="projects" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Selected Work</p>
+    <h2>Projects that show technical depth and problem solving.</h2>
+  </div>
 
-    <div class="achievement-card">
-        <h3>Heathrow Coding Competition – 1st Place</h3>
-        <p>
-            Collaborated in a team that secured 1st place in the Heathrow Coding Challenge. Designed and implemented a software solution under time constraints, showcasing creativity, teamwork, and technical proficiency.
-        </p>
-    </div>
+  <div class="projects-grid">
 
-    <div class="achievement-card">
-        <h3>CompTIA Data+ (In Progress)</h3>
-        <p>
-            Currently working towards the CompTIA Data+ certification, developing skills in data analytics, data mining, statistical methods, data governance, and transforming business requirements into data‑driven insights.
-        </p>
-    </div>
+    <article class="card featured">
+      <p class="tag">Final Year Project</p>
+      <h3>Diabetes Risk Estimator</h3>
+      <p>
+        A machine learning web application designed to predict diabetes risk using clinical
+        and lifestyle-based features. The project includes model development, evaluation,
+        and full-stack deployment.
+      </p>
+      <a href="https://github.com/Anoor1174/diabetes-predictor" target="_blank">View Project →</a>
+    </article>
 
-    <div class="achievement-card">
-        <h3>Harvard CS50 – Introduction to Computer Science</h3>
-        <p>
-            Built a strong foundation in algorithms, data structures, memory management, and web programming. Completed problem sets in C, Python, SQL, and JavaScript, applying theoretical concepts to real-world coding tasks.
-        </p>
-    </div>
+    <article class="card">
+      <p class="tag">Artificial Intelligence</p>
+      <h3>Mancala AI</h3>
+      <p>
+        An AI-powered Mancala game using Minimax, heuristic evaluation, and search optimisation
+        to model decision-making behaviour.
+      </p>
+      <a href="https://github.com/Anoor1174/Mancala-AI" target="_blank">View Project →</a>
+    </article>
 
-    <div class="achievement-card">
-        <h3>J.P. Morgan – Software Engineering Virtual Experience</h3>
-        <p>
-            Completed a virtual internship simulating real-world engineering tasks, including debugging, environment setup, and visualising stock price data for a trading dashboard.
-        </p>
-    </div>
-
-    <div class="achievement-card">
-        <h3>Blackbird Australia – Software Engineering Job Simulation</h3>
-        <p>
-            Gained hands-on experience with scalable software design, collaborative engineering workflows, and modern development practices through a Forage job simulation.
-        </p>
-    </div>
-
-    <div class="achievement-card">
-        <h3>Accenture North America – Advanced Engineering Simulation</h3>
-        <p>
-            Completed tasks involving code optimisation, debugging, and implementing enterprise-level development techniques in a simulated engineering environment.
-        </p>
-    </div>
-
-    <div class="achievement-card">
-        <h3>Royal Holloway University – CS & Engineering Summer School</h3>
-        <p>
-            Participated in a two-week programme exploring AI, robotics, and cybersecurity through practical workshops and team-based projects.
-        </p>
-    </div>
-
+  </div>
 </section>
 
+<section id="skills" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Technical Toolkit</p>
+    <h2>Skills across programming, data, web, and security.</h2>
+  </div>
 
+  <div class="skills-grid">
+    <div class="card">
+      <h3>Languages</h3>
+      <p>Java, Python, JavaScript, SQL, HTML, CSS</p>
+    </div>
 
-    <section id="experience" class="section fade-in">
-        <h2>Leadership & Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Vice President – Women in Tech Society</h3>
-                <p>Organised mentoring, networking events, and portfolio clinics.</p>
-            </div>
+    <div class="card">
+      <h3>Frameworks & Tools</h3>
+      <p>Flask, JAX-RS, Git, GitHub, Kali Linux, OWASP, NetBeans, VS Code</p>
+    </div>
 
-            <div class="timeline-item">
-                <h3>FANS Orientation Coordinator</h3>
-                <p>Supported new students and led onboarding activities.</p>
-            </div>
+    <div class="card">
+      <h3>Areas</h3>
+      <p>Machine Learning, REST APIs, Cyber Security, OOP, IoT, Full-Stack Development</p>
+    </div>
+  </div>
+</section>
 
-            <div class="timeline-item">
-                <h3>LEGOLAND – Customer Service Roles</h3>
-                <p>Developed communication, teamwork, and problem‑solving skills.</p>
-            </div>
-        </div>
-    </section>
+<section id="achievements" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Highlights</p>
+    <h2>Achievements, certifications, and simulations.</h2>
+  </div>
 
-    <section id="contact" class="section fade-in">
-        <h2>Contact</h2>
-        <p>GitHub: <a href="https://github.com/Anoor1174" target="_blank">github.com/azhaarnoor</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/azhaar-noor" target="_blank">linkedin.com/in/azhaar-noor</a></p>
-    </section>
+  <div class="cards-grid">
+    <article class="card">
+      <h3>Heathrow Coding Competition – 1st Place</h3>
+      <p>Worked in a team to design and implement a software solution under time constraints.</p>
+    </article>
 
-    <footer>
-        <p>© 2026 Azhaar Noor</p>
-    </footer>
+    <article class="card">
+      <h3>CompTIA Data+ – In Progress</h3>
+      <p>Developing skills in analytics, data mining, governance, and data-driven insights.</p>
+    </article>
+
+    <article class="card">
+      <h3>Harvard CS50</h3>
+      <p>Completed problem sets covering C, Python, SQL, JavaScript, algorithms, and data structures.</p>
+    </article>
+
+    <article class="card">
+      <h3>J.P. Morgan Software Engineering Experience</h3>
+      <p>Completed engineering tasks involving debugging, setup, and dashboard data visualisation.</p>
+    </article>
+
+    <article class="card">
+      <h3>Blackbird Software Engineering Simulation</h3>
+      <p>Explored scalable software design and collaborative engineering workflows.</p>
+    </article>
+
+    <article class="card">
+      <h3>Accenture Advanced Engineering Simulation</h3>
+      <p>Completed tasks involving debugging, optimisation, and enterprise-style development.</p>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">Leadership</p>
+    <h2>Experience beyond technical projects.</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Vice President – Women in Tech Society</h3>
+      <p>Organised mentoring, networking events, speaker sessions, and portfolio clinics.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>FANS Orientation Coordinator</h3>
+      <p>Supported new students and helped lead onboarding activities.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>LEGOLAND – Customer Service Roles</h3>
+      <p>Built communication, teamwork, and problem-solving skills in a fast-paced environment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <p class="eyebrow">Contact</p>
+  <h2>Let’s connect.</h2>
+
+  <div class="contact-links">
+    <a href="https://github.com/Anoor1174" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/azhaar-noor" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+</main>
 
 </body>
 </html>
