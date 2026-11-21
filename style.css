@@ -1,14 +1,6 @@
-/* ==========================================================================
-   1. Google Font Import (Lato 300, 400, 700)
-   ========================================================================== */
-@import url('https://googleapis.com');
-
-/* ==========================================================================
-   2. Theme Variables & Dark Mode
-   ========================================================================== */
 :root {
   --bg: #f7f6f3;
-  --text: #1c1c1c;
+  --ink: #1c1c1c;
   --muted: #8a857c;
   --line: #e4e0d8;
   --accent: #2b8a94;
@@ -17,11 +9,20 @@
   --font: "Lato", "Segoe UI", system-ui, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214;
+    --ink: #ececef;
+    --muted: #9a9aa2;
+    --line: #2a2a2f;
+    --accent: #4fb3be;
+    --stripe: #1a1a1e;
+  }
+}
 
-/* ==========================================================================
-   3. Base & Typography
-   ========================================================================== */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -32,27 +33,12 @@ html {
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--text);
+  color: var(--ink);
   font-family: var(--font);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 17px;
   line-height: 1.65;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
 }
 
 h1,
@@ -69,186 +55,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin: 48px 0 16px;
   padding-bottom: 6px;
   border-bottom: 1px solid var(--line);
-}
-
-/* ==========================================================================
-   4. Header & Navigation
-   ========================================================================== */
-header {
-  border-bottom: 1px solid var(--line);
-  position: sticky;
-  top: 0;
-  background: var(--bg);
-  z-index: 5;
-}
-
-.bar {
-  max-width: var(--col);
-  margin: 0 auto;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--text);
-}
-
-nav a {
-  margin-left: 22px;
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-nav a[aria-current="page"] {
-  border-bottom: 2px solid var(--accent);
-}
-
-nav .cv {
-  border: 1px solid var(--line);
-  padding: 4px 12px;
-  border-radius: 6px;
-}
-
-#menu {
-  display: none;
-  background: none;
-  border: 0;
-  color: var(--text);
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-/* ==========================================================================
-   5. Main Layout & Sections
-   ========================================================================== */
-main {
-  max-width: var(--col);
-  margin: 0 auto;
-  padding: 48px 20px 72px;
-}
-
-.links a {
-  margin-right: 16px;
-  font-weight: 400;
-}
-
-/* Bio / Intro Split */
-.split {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 28px;
-  align-items: start;
-}
-
-.split img {
-  width: 100%;
-  border-radius: 6px;
-  border: 1px solid var(--line);
-  display: block;
-}
-
-.caption {
-  color: var(--muted);
-  font-size: 0.88rem;
-  margin-top: 6px;
-}
-
-/* Timeline Rows (News / Experience) */
-.row {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-
-.when {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.row p {
-  margin: 0;
-}
-
-/* Project / Research Cards (Updated to match his borderless, bottom-lined rows) */
-.card {
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.card h3 {
-  margin: 5px 0;
-  font-size: 15.5px;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.tag {
-  font-size: 9.5px;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
-}
-
-/* ==========================================================================
-   6. Footer
-   ========================================================================== */
-footer {
-  max-width: var(--col);
-  margin: 0 auto;
-  padding: 24px 20px;
-  color: var(--muted);
-  font-size: 0.88rem;
-  border-top: 1px solid var(--line);
-}
-
-/* ==========================================================================
-   7. Mobile Responsive Styles
-   ========================================================================== */
-@media (max-width: 720px) {
-  #menu {
-    display: block;
-  }
-
-  nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    border-bottom: 1px solid var(--line);
-    padding: 8px 20px 16px;
-  }
-
-  nav.open {
-    display: block;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .split {
-    grid-template-columns: 1fr;
-  }
-
-  .row {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
 }
