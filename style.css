@@ -5,7 +5,7 @@
   --line: #e4e0d8;
   --accent: #2b8a94;
   --stripe: #f1efe9;
-  --col: 700px;
+  --col: 740px;
   --font: "Lato", "Segoe UI", system-ui, sans-serif;
 }
 
@@ -47,7 +47,8 @@ h1, h2, h3, .h1 {
 .wrap {
   max-width: var(--col);
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 /* Navigation */
@@ -157,7 +158,7 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1fr 165px;
-  gap: 32px;
+  gap: 36px;
   align-items: start;
 }
 
@@ -266,13 +267,13 @@ main {
 .news {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .ev {
   display: grid;
-  grid-template-columns: 115px 1fr;
-  gap: 14px;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
   font-size: 13.5px;
   align-items: baseline;
 }
@@ -328,28 +329,10 @@ main {
   margin: 5px 0;
 }
 
-.authors {
-  font-size: 11px;
-  color: #6a655c;
-  margin-bottom: 5px;
-}
-
-.authors strong {
-  color: var(--ink);
-}
-
 .p {
   font-size: 12.5px;
   line-height: 1.55;
   color: #5a564e;
-}
-
-.item-links {
-  font-size: 10px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 7px;
 }
 
 .more-link {
@@ -366,7 +349,7 @@ main {
 /* Experience Center-Axis Timeline */
 .tl {
   position: relative;
-  margin: 20px 0 12px;
+  margin: 22px 0 12px;
 }
 
 .tl::before {
@@ -383,7 +366,7 @@ main {
 .tl-item {
   position: relative;
   width: 50%;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
 }
 
 .tl-item:last-child {
@@ -392,13 +375,13 @@ main {
 
 .tl-item.left {
   left: 0;
-  padding-right: 24px;
+  padding-right: 28px;
   text-align: right;
 }
 
 .tl-item.right {
   left: 50%;
-  padding-left: 24px;
+  padding-left: 28px;
   text-align: left;
 }
 
@@ -424,9 +407,9 @@ main {
 .tl-head {
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 10px;
   font-size: 12px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .tl-item.left .tl-head {
@@ -466,6 +449,11 @@ main {
 
 /* Mobile Responsive */
 @media (max-width: 720px) {
+  .wrap {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
   .links {
     display: none;
   }
@@ -476,7 +464,7 @@ main {
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 24px;
   }
 
   .portrait {
@@ -485,7 +473,7 @@ main {
 
   .ev {
     grid-template-columns: 1fr;
-    gap: 2px;
+    gap: 3px;
   }
 
   .item.has-image {
@@ -512,8 +500,8 @@ main {
   .tl-item.right {
     width: 100%;
     left: 0;
-    padding-left: 24px;
-    padding-right: 0;
+    padding-left: 26px;
+    padding-right: 4px;
     text-align: left;
   }
 
