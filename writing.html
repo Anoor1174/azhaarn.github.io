@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Writings — Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing — Azhaa</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html">&larr; Portfolio</a>
-      <a href="writings.html" aria-current="page">Writings</a>
-    </nav>
-  </header>
-
-<main class="wrap">
-  <div class="page-head">
-    <h1>Writings</h1>
-    <p class="page-lead">Essays, literature reviews, and ongoing research notes.</p>
-  </div>
-
-<div class="wlist">
-  <a class="wrow" href="invisblestrings.html">
-    <span class="wdate">Nov 2026</span>
-    <div class="wmain">
-      <div class="wtop">
-        <span class="wtag essay">Essay</span>
-        <span class="wtitle">Invisible Strings: How AI Bias Hides in Proxy Variables</span>
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="logo" href="index.html">PORTFOLIO</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a class="on" href="writings.html">Writing</a>
       </div>
-      <p class="wsummary">
-        Removing protected attributes doesn&rsquo;t eliminate bias when features like postcodes or job titles act as proxies.
-      </p>
+      <details class="mmenu">
+        <summary aria-label="Menu">&#9776;</summary>
+        <div class="mlinks">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a class="on" href="writings.html">Writing</a>
+        </div>
+      </details>
     </div>
-    <span class="warrow">&rarr;</span>
-  </a>
+  </nav>
 
-  <a class="wrow" href="mancala.html">
-    <span class="wdate">Draft</span>
-    <div class="wmain">
-      <div class="wtop">
-        <span class="wtag essay">Essay</span>
-        <span class="wtitle">AI in Games: From Classical Search to Mancala and Go</span>
-      </div>
-      <p class="wsummary">
-        Early history, Pac-Man and Go, and why classical minimax with alpha-beta pruning works well in Mancala.
+  <main>
+    <div class="wrap">
+      <h1 style="font-size: 30px; padding: 52px 0 0; margin: 0;">Writing</h1>
+      <p class="intro">
+        Essays, project write-ups, and working notes exploring AI fairness, proxy variables, and game AI. Some pieces are early drafts in progress, while others document completed experiments and literature reviews.
       </p>
+
+      <section style="margin-top: 12px;">
+        <a class="post-row" href="invisblestrings.html">
+          <div class="pr-date">Nov 2026 &middot; Work in Progress</div>
+          <div class="pr-title">Invisible Strings: How AI Bias Hides in Proxy Variables</div>
+          <div class="pr-tag"><span class="wtag essay">Essay</span></div>
+          <div class="pr-ex">
+            Removing protected attributes such as ethnicity or gender does not eliminate bias when seemingly neutral features like postcodes or job titles act as proxies. This project tests whether planted proxy relationships of varying strength can be detected reliably using synthetic datasets.
+          </div>
+        </a>
+
+        <a class="post-row" href="mancala.html">
+          <div class="pr-date">Literature Review</div>
+          <div class="pr-title">AI in Games: From Classical Search to Mancala and Go</div>
+          <div class="pr-tag"><span class="wtag essay">Essay</span></div>
+          <div class="pr-ex">
+            From Arthur Samuel&rsquo;s checkers and Shannon&rsquo;s minimax to AlphaGo, Pac-Man pathfinding, and classical search in Mancala&mdash;examining how different games shape AI approaches.
+          </div>
+        </a>
+      </section>
     </div>
-    <span class="warrow">&rarr;</span>
-  </a>
-</div>
-</main>
+  </main>
+
+  <footer class="foot wrap">
+    <span>&copy; 2026 Azhaa</span>
+    <span></span>
+  </footer>
 </body>
 </html>
