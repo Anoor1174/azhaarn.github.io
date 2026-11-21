@@ -1,89 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Azhaar</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azhaar</title>
+  <meta name="description" content="Computer Science graduate from the University of Westminster and Data Analyst Trainee at Rockborne in London.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><div class="bar">
-  <a class="brand" href="home.html">AZHAAR</a>
-  <button id="menu" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-  <nav id="nav">
-    <a href="home.html" aria-current="page">Bio</a>
-    <a href="research.html">Research</a>
-    <a href="sharing.html">Sharing</a>
-    <a href="writing.html">Writing</a>
-    <a class="cv" href="cv.pdf">CV</a>
+
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="logo" href="home.html">AZHAAR</a>
+      <div class="links">
+        <a href="home.html" class="on">Bio</a>
+        <a href="research.html">Research</a>
+        <a href="sharing.html">Sharing</a>
+        <a href="writing.html">Writing</a>
+        <a class="cv" href="cv.pdf">CV</a>
+      </div>
+      <details class="mmenu">
+        <summary aria-label="Menu">&#9776;</summary>
+        <div class="mlinks">
+          <a href="home.html" class="on">Bio</a>
+          <a href="research.html">Research</a>
+          <a href="sharing.html">Sharing</a>
+          <a href="writing.html">Writing</a>
+          <a class="cv" href="cv.pdf">CV</a>
+        </div>
+      </details>
+    </div>
   </nav>
-</div></header>
-<main>
-  <h1>Azhaar</h1>
-  <p>I'm a Computer Science graduate from the University of Westminster and a Data Analyst Trainee on the Rockborne programme in London. My main interests are algorithmic fairness, data ethics and applied machine learning.</p>
-  <p class="links">
-    <a href="https://github.com/YOUR-USERNAME">GitHub</a>
-    <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
-    <a href="mailto:you@example.com">Email</a>
-  </p>
 
-  <h2>Education</h2>
-  <div class="split">
-    <div>
-      <p><strong>BSc Computer Science</strong> <span class="when">2026</span><br>University of Westminster</p>
-      <p>Write two or three sentences about your background, what you do outside work, and what you are learning now.</p>
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <h1 class="h1">Azhaar</h1>
+          <p class="intro">
+            I'm a Computer Science graduate from the <a href="https://www.westminster.ac.uk/">University of Westminster</a> and a Data Analyst Trainee on the Rockborne programme in London. My main interests are <strong>algorithmic fairness</strong>, <strong>data ethics</strong>, and <strong>applied machine learning</strong>.
+          </p>
+          <div class="contacts">
+            <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+            <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+            <a href="mailto:you@example.com">Email</a>
+          </div>
+          <div class="edu">
+            <div class="edulabel">Education</div>
+            <div class="edurow">
+              <b>BSc Computer Science</b> <span><em>2026</em></span><br>
+              University of Westminster<br>
+              <span>London, United Kingdom</span>
+            </div>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="bio-photo.png" alt="Portrait of Azhaar">
+          <span>London, UK</span>
+        </div>
+      </section>
+
+      <!-- Personal bio paragraph -->
+      <section class="space">
+        <p>
+          Write two or three sentences about your background, what you do outside work, and what you are learning now.
+        </p>
+      </section>
+
+      <!-- News -->
+      <div class="shead"><span class="slabel">News</span></div>
+      <section class="news">
+        <div class="ev">
+          <div class="date">Month 2026</div>
+          <div class="text">Short update, for example a new role, project, or award.</div>
+        </div>
+        <div class="ev">
+          <div class="date">Month 2026</div>
+          <div class="text">Co-founded the Women in Tech Society at the University of Westminster.</div>
+        </div>
+      </section>
+
+      <!-- Selected Projects / Research -->
+      <div class="shead"><span class="slabel">Selected Projects</span></div>
+      <section>
+        <div class="item">
+          <div class="body">
+            <div class="badge">Final Year Project</div>
+            <div class="h">Dual-Path Diabetes Risk Predictor</div>
+            <div class="p">One or two sentences on the problem, the method, and the result.</div>
+            <div class="item-links"><a href="https://github.com/YOUR-USERNAME/YOUR-REPO">Code</a></div>
+          </div>
+        </div>
+      </section>
+      <p class="more-link"><a href="research.html">All research &rarr;</a></p>
+
+      <!-- Experience Timeline -->
+      <div class="shead"><span class="slabel">Experience</span></div>
+      <div class="tl">
+        <div class="tl-item right">
+          <div class="tl-node"></div>
+          <div class="tl-c">
+            <div class="tl-head">
+              <span class="tl-inst">Rockborne</span>
+              <span class="tl-date">2026 – Present</span>
+            </div>
+            <div class="tl-role">
+              <b>Data Analyst Trainee</b><br>
+              <span>London, UK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item left">
+          <div class="tl-node"></div>
+          <div class="tl-c">
+            <div class="tl-head">
+              <span class="tl-date">2022 – 2026</span>
+              <span class="tl-inst">University of Westminster</span>
+            </div>
+            <div class="tl-role">
+              <b>BSc Student</b><br>
+              <span>Computer Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <figure style="margin:0">
-      <img src="bio-photo.png" alt="Portrait of Azhaar">
-      <figcaption class="caption">London, UK</figcaption>
-    </figure>
-  </div>
+  </main>
 
-  <h2>News</h2>
-  <div class="row"><div class="when">Month 2026</div><p>Short update, for example a new role, project or award.</p></div>
-  <div class="row"><div class="when">Month 2026</div><p>Co-founded the Women in Tech Society at the University of Westminster.</p></div>
+  <footer class="foot wrap">
+    <span>&copy; 2026 Azhaar</span>
+    <span>you@example.com</span>
+  </footer>
 
-  <h2>Selected projects</h2>
-  <div class="card">
-    <div class="tag">Final year project</div>
-    <h3>Dual-Path Diabetes Risk Predictor</h3>
-    <p>One or two sentences on the problem, the method and the result.</p>
-    <a href="https://github.com/YOUR-USERNAME/YOUR-REPO">Code</a>
-  </div>
-  <p><a href="research.html">All research</a></p>
-
-  <h2>Experience</h2>
-<div class="tl">
-  <div class="tl-item right">
-    <div class="tl-node"></div>
-    <div class="tl-c">
-      <div class="tl-head">
-        <span class="tl-inst">Rockborne</span>
-        <span class="tl-date">2026 – Present</span>
-      </div>
-      <div class="tl-role">
-        <b>Data Analyst Trainee</b><br>
-        <span>London, UK</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="tl-item left">
-    <div class="tl-node"></div>
-    <div class="tl-c">
-      <div class="tl-head">
-        <span class="tl-date">2022 – 2026</span>
-        <span class="tl-inst">University of Westminster</span>
-      </div>
-      <div class="tl-role">
-        <b>BSc Computer Science</b><br>
-        <span>London, UK</span>
-      </div>
-    </div>
-  </div>
-</div>
-</main>
-<footer>&copy; 2026 Azhaar &middot; you@example.com</footer>
-<script src="main.js"></script>
 </body>
 </html>
