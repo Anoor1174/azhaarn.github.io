@@ -17,16 +17,6 @@
   --font: "Lato", "Segoe UI", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #161615;
-    --text: #e8e6e1;
-    --muted: #98938a;
-    --line: #2c2b28;
-    --accent: #52b4be;
-    --stripe: #1e1e1c;
-  }
-}
 
 /* ==========================================================================
    3. Base & Typography
