@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invisible Strings: How AI Bias Hides in Proxy Variables</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="writings.html">&larr; Back to Writings</a>
+    </nav>
+  </header>
+
+  <main class="essay-container">
+    <article class="essay">
+      <p class="eyebrow">Work in Progress &middot; AI Fairness &amp; Proxy Variables</p>
+      <h1>Invisible Strings: How AI Bias Hides in Proxy Variables</h1>
+      <p class="subtitle">
+        Testing whether proxy relationships planted at varying strengths in synthetic datasets can be reliably detected.
+      </p>
+
+      <section class="abstract-box" aria-label="Abstract">
+        <h2>Abstract</h2>
+        <p>
+          Bias is learned through socialisation, which AI systems can later inherit. Removing a protected attribute such as ethnicity or gender from a dataset does not eliminate underlying bias, because seemingly neutral features—such as postcodes or job titles—can act as proxy variables that encode it. This project asks whether such proxies can be detected reliably by generating synthetic datasets with planted proxy relationships of varying strength.
+        </p>
+      </section>
+
+      <div class="essay-body">
+        <h2>1. Why Removing Protected Attributes Isn&rsquo;t Enough</h2>
+        <p>
+          <em>Draft notes:</em> Explain how dropping explicit demographic columns leaves correlated signals intact in other features, allowing models to indirectly reproduce group disparities.
+        </p>
+
+        <h2>2. Proxy Variables in Practice: Postcodes, Job Titles, and Beyond</h2>
+        <p>
+          <em>Draft notes:</em> Walk through concrete examples of features that look neutral on the surface but correlate with protected attributes through structural or social patterns.
+        </p>
+
+        <h2>3. Experimental Setup: Synthetic Datasets &amp; Varying Proxy Strengths</h2>
+        <p>
+          <em>Draft notes:</em> Outline how synthetic datasets are constructed with controlled, known proxy relationships across weak, moderate, and strong correlation levels.
+        </p>
+
+        <h2>4. Detecting Proxies Reliably &amp; Next Steps</h2>
+        <p>
+          <em>Draft notes:</em> Capture what detection methods are being tested, how reliability is measured, and what remains to be evaluated.
+        </p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

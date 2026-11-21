@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI in Games: From Classical Search to Mancala and Go</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="writings.html">&larr; Back to Writings</a>
+    </nav>
+  </header>
+
+  <main class="essay-container">
+    <article class="essay">
+      <p class="eyebrow">Focused Literature Review · Games &amp; AI</p>
+      <h1>AI in Games: From Classical Search to Mancala and Go</h1>
+      <p class="subtitle">
+        Early history, examples across Super Mario, Tic-Tac-Toe, Pac-Man, and Go, and why classical search remains effective in Mancala.
+      </p>
+
+      <div class="essay-body">
+        <p>
+          The problem domain I have chosen to research is games. Due to their nature, games have long been used to test AI because they provide a controlled environment. Early AI approaches using games date back to the 1950s with Arthur Samuel's checkers-playing program, which introduced machine learning concepts and led to him being coined the father of machine learning. Although his program had limitations, he worked around them by introducing alpha-beta pruning.
+        </p>
+        <p>
+          Another game with historical significance is Go, a traditional East Asian board game dating back approximately 4,000 years. Go typically relies on Monte Carlo Tree Search because of how large the space of possible states is. The major breakthrough came with Google DeepMind's AlphaGo, which combined deep convolutional neural networks and reinforcement learning through self-play. The system used two neural networks—a policy network to select promising moves and a value network to estimate who would win—both trained through extensive self-play.
+        </p>
+        <p>
+          AlphaGo's defeat of Lee Sedol, the Go world champion, in 2016 demonstrated AI's superhuman performance for the first time. Although Sedol was the first and only person to win a game against the AI—taking one out of five games—revealing a weakness in the system, the shift in Go led him to retire, viewing AI in games as an entity that cannot be defeated.
+        </p>
+
+        <h2>Minimax, Chess, and Alpha-Beta Pruning</h2>
+        <p>
+          In 1950, Claude Shannon first proposed the minimax algorithm for chess. It works by assuming both players choose the most optimal moves to succeed and exploring the game tree to find the best action. This made minimax the standard for most two-player game AI, but it ran into a major bottleneck: the algorithm had to explore far too many positions. In chess, the number of possible positions grows with each move, making an exhaustive search of the entire game tree impossible. Alpha-beta pruning addresses this by cutting out branches that cannot affect the final decision, and research shows that with good move ordering, alpha-beta can substantially reduce the number of positions searched.
+        </p>
+
+        <h2>Real-Time Spatial Games: Pac-Man</h2>
+        <p>
+          Moving beyond traditional board games, Pac-Man presented different problems. When it was first released in 1980, the ghosts were not actually intelligent—they followed predetermined patterns that created the illusion of intelligent behaviour without sophisticated AI. Modern approaches to Pac-Man use pathfinding algorithms such as A* search to calculate optimal routes through the maze, allowing the AI to avoid ghosts while collecting pellets efficiently.
+        </p>
+        <p>
+          More recent research has explored reinforcement learning, where agents play thousands of games and learn strategies through experience rather than explicit programming. Competitions such as the Ms. Pac-Man vs Ghosts competition have shown that AI can reach scores beyond human players by discovering strategies through trial and error, illustrating how real-time spatial games demand different techniques from turn-based strategy games.
+        </p>
+
+        <h2>Classical Search in Simpler Board Games: Mancala</h2>
+        <p>
+          Simpler board games like Mancala show that traditional AI techniques can still be highly effective. Mancala is an ancient African board game with a state space of approximately 10<sup>13</sup> possible positions—large, yet still manageable for classical search algorithms. Unlike Go's complexity, which required neural networks, or Pac-Man's real-time demands, which required pathfinding, Mancala's turn-based structure and perfect information make it well suited to minimax with alpha-beta pruning.
+        </p>
+        <p>
+          Research shows that an AI searching just six moves ahead can win most games against random players without needing deep learning or weeks of training. That makes Mancala especially valuable for education: students can build a competitive AI using core search algorithms without expensive hardware or long training runs, learning game tree exploration and position evaluation in a computationally manageable setting. Even without the media spotlight of AlphaGo, games like Mancala show that classical AI remains practical and foundational.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          The evolution of AI in games reflects major progress from simple pattern-based systems to superhuman performance. Real-time games like Pac-Man rely on pathfinding and spatial reasoning, turn-based games like Mancala benefit from search algorithms and optimal play, and complex games like Go have driven advances in deep learning and self-play. Across educational tools like Mancala and frontier benchmarks like Go, games continue to serve as practical testbeds connecting AI research to broader applications.
+        </p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
