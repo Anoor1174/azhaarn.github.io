@@ -51,7 +51,6 @@ h1, h2, h3, .h1 {
   padding-right: 28px;
 }
 
-/* Navigation */
 .nav {
   position: sticky;
   top: 0;
@@ -150,7 +149,6 @@ h1, h2, h3, .h1 {
   font-weight: 700;
 }
 
-/* Main & Hero */
 main {
   padding: 44px 0 64px;
 }
@@ -239,7 +237,6 @@ main {
   margin: 0;
 }
 
-/* Section Headers */
 .shead {
   display: flex;
   align-items: center;
@@ -263,7 +260,6 @@ main {
   font-weight: 700;
 }
 
-/* News */
 .news {
   display: flex;
   flex-direction: column;
@@ -283,7 +279,6 @@ main {
   font-size: 12.5px;
 }
 
-/* Technical Skills */
 .skills-grid {
   display: flex;
   flex-direction: column;
@@ -308,7 +303,6 @@ main {
   color: #4b4740;
 }
 
-/* Certifications & Leadership */
 .cert-list {
   display: flex;
   flex-direction: column;
@@ -337,7 +331,6 @@ main {
   margin-top: 2px;
 }
 
-/* Selected Research / Projects */
 .item {
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
@@ -400,7 +393,6 @@ main {
   text-transform: uppercase;
 }
 
-/* Experience Center-Axis Timeline */
 .tl {
   position: relative;
   margin: 22px 0 12px;
@@ -490,7 +482,6 @@ main {
   font-size: 12px;
 }
 
-/* Footer */
 .foot {
   border-top: 1px solid var(--line);
   padding-top: 20px;
@@ -501,7 +492,6 @@ main {
   color: var(--muted);
 }
 
-/* Mobile Responsive */
 @media (max-width: 720px) {
   .wrap {
     padding-left: 22px;
