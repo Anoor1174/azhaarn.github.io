@@ -7,24 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="writings.html">&larr; Back to Writings</a>
-    </nav>
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="logo" href="index.html">PORTFOLIO</a>
+      <nav class="links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="on" href="writings.html">Writings</a>
+      </nav>
+      <details class="mmenu">
+        <summary aria-label="Menu">&#9776;</summary>
+        <div class="mlinks">
+          <a href="index.html">Home</a>
+          <a class="on" href="writings.html">Writings</a>
+        </div>
+      </details>
+    </div>
   </header>
 
-  <main class="essay-container">
-    <article class="essay">
-      <p class="eyebrow">Work in Progress &middot; AI Fairness &amp; Proxy Variables</p>
+  <main class="wrap">
+    <a class="back-link" href="writings.html">&larr; Back to Writings</a>
+
+    <article class="post">
       <h1>Invisible Strings: How AI Bias Hides in Proxy Variables</h1>
-      <p class="subtitle">
+      <p class="post-subtitle">
         Testing whether proxy relationships planted at varying strengths in synthetic datasets can be reliably detected.
       </p>
+
+      <div class="meta">
+        <span class="wtag essay">Essay</span>
+        <span class="date">Work in Progress &middot; Nov 2026</span>
+      </div>
 
       <section class="abstract-box" aria-label="Abstract">
         <h2>Abstract</h2>
         <p>
-          Bias is learned through socialisation, which AI systems can later inherit. Removing a protected attribute such as ethnicity or gender from a dataset does not eliminate underlying bias, because seemingly neutral features—such as postcodes or job titles—can act as proxy variables that encode it. This project asks whether such proxies can be detected reliably by generating synthetic datasets with planted proxy relationships of varying strength.
+          Bias is learned through socialisation, which AI systems can later inherit. Removing a protected attribute such as ethnicity or gender from a dataset does not eliminate underlying bias, because seemingly neutral features&mdash;such as postcodes or job titles&mdash;can act as proxy variables that encode it. This project asks whether such proxies can be detected reliably by generating synthetic datasets with planted proxy relationships of varying strength.
         </p>
       </section>
 
